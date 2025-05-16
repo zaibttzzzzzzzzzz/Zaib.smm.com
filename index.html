@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -64,50 +65,153 @@
       font-size: 14px;
       color: #aaa;
     }
+    
+    /* Login Page Styles */
+    .login-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #111;
+    }
+    .login-box {
+      background: #1a1a1a;
+      padding: 40px;
+      border-radius: 12px;
+      border: 2px solid #ffba00;
+      box-shadow: 0 0 20px #ffba00aa;
+      width: 350px;
+      text-align: center;
+    }
+    .login-box h2 {
+      color: #ffba00;
+      margin-bottom: 30px;
+    }
+    .input-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    .input-group label {
+      display: block;
+      margin-bottom: 8px;
+      color: #ffba00;
+    }
+    .input-group input {
+      width: 100%;
+      padding: 12px;
+      background: #222;
+      border: 1px solid #333;
+      border-radius: 8px;
+      color: #fff;
+      font-family: 'Orbitron', sans-serif;
+    }
+    .login-btn {
+      background: linear-gradient(90deg, #ffba00, #ff5500);
+      color: #111;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 8px;
+      font-family: 'Orbitron', sans-serif;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+      width: 100%;
+      margin-top: 10px;
+    }
+    .login-btn:hover {
+      box-shadow: 0 0 15px #ffba00aa;
+    }
+    .hidden {
+      display: none;
+    }
   </style>
 </head>
 <body>
-  <header>
-    Zaib SMM Panel Flat Pro
-  </header>  <nav>
-    <a href="#services">Services</a>
-    <a href="#deposit">Deposit</a>
-    <a href="#orders">My Orders</a>
-  </nav>  <section id="services" class="service-section">
-    <div class="card">
-      <img src="https://img.icons8.com/color/48/youtube-play.png" alt="YouTube">
-      <h3>YouTube Services</h3>
-      <p>Likes, Subscribers, Views</p>
+  <!-- Login Page -->
+  <div id="loginPage" class="login-container">
+    <div class="login-box">
+      <h2>Zaib SMM Panel Login</h2>
+      <form id="loginForm">
+        <div class="input-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" required>
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" required>
+        </div>
+        <button type="submit" class="login-btn">LOGIN</button>
+      </form>
     </div>
-    <div class="card">
-      <img src="https://img.icons8.com/color/48/tiktok.png" alt="TikTok">
-      <h3>TikTok Services</h3>
-      <p>Followers, Likes, Comments</p>
-    </div>
-    <div class="card">
-      <img src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="Instagram">
-      <h3>Instagram Services</h3>
-      <p>Followers, Reels, Likes</p>
-    </div>
-    <div class="card">
-      <img src="https://img.icons8.com/color/48/facebook-new.png" alt="Facebook">
-      <h3>Facebook Services</h3>
-      <p>Page Likes, Post Likes, Views</p>
-    </div>
-    <div class="card">
-      <img src="https://img.icons8.com/color/48/whatsapp.png" alt="WhatsApp">
-      <h3>WhatsApp Views</h3>
-      <p>Status Views, Clicks</p>
-    </div>
-    <div class="card">
-      <img src="https://img.icons8.com/color/48/telegram-app.png" alt="Telegram">
-      <h3>Telegram Services</h3>
-      <p>Group Join, Post Views</p>
-    </div>
-    <div class="card">
-      <img src="https://img.icons8.com/color/48/twitterx.png" alt="Twitter">
-      <h3>Twitter Services</h3>
-      <p>Likes, Retweets, Views</p>
-    </div>
-  </section></body>
+  </div>
+
+  <!-- Main Panel (hidden by default) -->
+  <div id="mainPanel" class="hidden">
+    <header>
+      Zaib SMM Panel Flat Pro
+    </header>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#deposit">Deposit</a>
+      <a href="#orders">My Orders</a>
+    </nav>
+    <section id="services" class="service-section">
+      <div class="card">
+        <img src="https://img.icons8.com/color/48/youtube-play.png" alt="YouTube">
+        <h3>YouTube Services</h3>
+        <p>Likes, Subscribers, Views</p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/color/48/tiktok.png" alt="TikTok">
+        <h3>TikTok Services</h3>
+        <p>Followers, Likes, Comments</p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="Instagram">
+        <h3>Instagram Services</h3>
+        <p>Followers, Reels, Likes</p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/color/48/facebook-new.png" alt="Facebook">
+        <h3>Facebook Services</h3>
+        <p>Page Likes, Post Likes, Views</p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/color/48/whatsapp.png" alt="WhatsApp">
+        <h3>WhatsApp Views</h3>
+        <p>Status Views, Clicks</p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/color/48/telegram-app.png" alt="Telegram">
+        <h3>Telegram Services</h3>
+        <p>Group Join, Post Views</p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/color/48/twitterx.png" alt="Twitter">
+        <h3>Twitter Services</h3>
+        <p>Likes, Retweets, Views</p>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    // Simple login functionality
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      
+      // Basic validation (in a real app, you would check against a database)
+      if(username && password) {
+        // Hide login page
+        document.getElementById('loginPage').classList.add('hidden');
+        // Show main panel
+        document.getElementById('mainPanel').classList.remove('hidden');
+      } else {
+        alert('Please enter both username and password');
+      }
+    });
+  </script>
+</body>
 </html>
